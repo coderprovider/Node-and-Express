@@ -5,4 +5,4 @@ const fakher = "fakher";
 const hammad = "hammad";
 
 // console.log(module);
-module.exports = { fakher, hammad };    // export multiple items
+module.exports = { fakher, hammad }; // export multiple items
