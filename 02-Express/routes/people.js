@@ -1,14 +1,13 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
 
 const {
-    getPeople,
-    createPerson,
-    createPersonPostman,
-    putPerson,
-    deletePerson
-} = require('../controllers/people');
-
+  getPeople,
+  createPerson,
+  createPersonPostman,
+  putPerson,
+  deletePerson,
+} = require("../controllers/people");
 
 // => Methodology # 1:
 // Method: GET
@@ -23,8 +22,8 @@ const {
 // router.delete('/:id', deletePerson);
 
 // => Methodology # 2:
-router.route('/').get(getPeople).post(createPerson);
-router.route('/postman').post(createPersonPostman);
-router.route('/:id').put(putPerson).delete(deletePerson);
+router.route("/").get(getPeople).post(createPerson);
+router.route("/postman").post(createPersonPostman);
+router.route("/:id").put(putPerson).delete(deletePerson);
 
 module.exports = router;
